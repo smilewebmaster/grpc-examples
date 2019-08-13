@@ -1,0 +1,11 @@
+syntax = "proto3";
+package reverse;
+service Reverse {
+    rpc Do(Request) returns (Response) {}
+}
+message Request {
+    string message = 1;
+}
+message Response {
+    string message = 1;
+}
